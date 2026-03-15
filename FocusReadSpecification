@@ -1,0 +1,235 @@
+Below is a **strong AI prompt you can use** to generate most of your **FocusRead system** with a **modern design**. You can paste this into an AI coding tool (like ChatGPT, Cursor, Copilot, or other AI dev tools) to generate the project.
+
+---
+
+# AI Prompt for Generating the FocusRead System
+
+**Prompt:**
+
+Create a **modern full-stack web application** called **FocusRead: Online Reading Assessment and Monitoring System**.
+
+The system helps teachers assess students’ reading skills and monitor their reading progress through structured reading activities and assessments.
+
+---
+
+# Tech Stack
+
+Frontend:
+
+* TypeScript
+* HTML
+* CSS
+* Modern responsive UI
+* Clean dashboard layout
+* Card-based design
+* Use modern styling (Flexbox/Grid)
+
+Backend:
+
+* NestJS (Node.js framework)
+* REST API architecture
+* JWT Authentication
+
+Database:
+
+* PostgreSQL or MySQL
+
+---
+
+# User Roles
+
+### Admin
+
+* Manage users (teachers and students)
+* Manage reading materials
+* View system statistics
+
+### Teacher
+
+* Create reading assessments
+* Upload reading passages
+* Assign reading tasks
+* Monitor student reading progress
+* Generate performance reports
+
+### Student
+
+* View assigned reading tasks
+* Read passages
+* Take reading assessments
+* View their progress
+
+---
+
+# Core Features
+
+### Authentication System
+
+* Login
+* Register
+* JWT authentication
+* Role-based access (Admin, Teacher, Student)
+
+### Teacher Dashboard
+
+* View student list
+* Create reading assessments
+* Assign reading materials
+* View reading performance
+
+### Student Dashboard
+
+* View assigned reading tasks
+* Reading interface
+* Submit answers
+* View progress
+
+### Reading Assessment System
+
+* Teachers create reading passages
+* Add comprehension questions
+* Students answer questions after reading
+
+### Progress Monitoring
+
+* Track student reading scores
+* Store assessment results
+* Display charts or progress indicators
+
+### Reporting System
+
+* Generate reports showing:
+
+  * reading score
+  * comprehension level
+  * progress over time
+
+---
+
+# UI Design Requirements (Modern)
+
+Design should include:
+
+* Clean dashboard
+* Sidebar navigation
+* Responsive layout
+* Card-based components
+* Soft color palette (educational theme)
+* Icons for navigation
+* Charts for progress visualization
+* Minimalist and modern UI
+
+Pages should include:
+
+1. Login Page
+2. Register Page
+3. Admin Dashboard
+4. Teacher Dashboard
+5. Student Dashboard
+6. Reading Activity Page
+7. Assessment Page
+8. Progress Report Page
+
+---
+
+# Backend Structure (NestJS)
+
+Use a modular architecture with the following modules:
+
+* AuthModule
+* UsersModule
+* StudentsModule
+* TeachersModule
+* AssessmentsModule
+* ReadingMaterialsModule
+* ResultsModule
+* ReportsModule
+
+Include:
+
+* DTOs
+* Services
+* Controllers
+* Entity models
+* Database integration
+
+---
+
+# Database Tables
+
+Suggested schema:
+
+Users
+
+* id
+* name
+* email
+* password
+* role
+
+Students
+
+* id
+* user_id
+* grade_level
+
+Teachers
+
+* id
+* user_id
+
+ReadingMaterials
+
+* id
+* title
+* content
+* created_by
+
+Assessments
+
+* id
+* material_id
+* question
+* correct_answer
+
+Results
+
+* id
+* student_id
+* assessment_id
+* answer
+* score
+* date_taken
+
+ProgressReports
+
+* id
+* student_id
+* average_score
+* improvement_rate
+
+---
+
+# Additional Requirements
+
+* Use RESTful API design
+* Implement form validation
+* Use secure password hashing
+* Create reusable components
+* Follow clean code structure
+* Use environment variables
+* Include error handling
+
+---
+
+# Output Expected
+
+Generate:
+
+1. Full project folder structure
+2. NestJS backend code
+3. Frontend pages
+4. Database schema
+5. API endpoints
+6. Sample UI layout
+7. Example data
