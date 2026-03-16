@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { Sidebar } from '../components/Sidebar'
 import { useAuth } from '../context/AuthContext'
-import { Home, Users, FileText, BarChart3, BookOpen, CheckSquare } from 'lucide-react'
+import { Home, Users, FileText, BarChart3, BookOpen, CheckSquare, HelpCircle } from 'lucide-react'
 import './DashboardLayout.css'
 
 interface DashboardLayoutProps {
@@ -34,6 +34,9 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       { label: 'Progress', path: '/progress', icon: <BarChart3 size={20} /> }
     )
   }
+
+  // FAQ available to all users
+  navItems.push({ label: 'FAQ', path: '/faq', icon: <HelpCircle size={20} /> })
 
   return (
     <div className="dashboard-layout">

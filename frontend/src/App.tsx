@@ -14,6 +14,7 @@ import { StudentDashboard } from './pages/StudentDashboard'
 // Feature pages
 import { ReadingActivity } from './pages/ReadingActivity'
 import { ProgressReport } from './pages/ProgressReport'
+import { FAQ } from './pages/FAQ'
 
 // Teacher pages
 import { CreateAssessment } from './pages/CreateAssessment'
@@ -109,6 +110,15 @@ const AppRoutes = () => {
         element={
           <ProtectedRoute>
             <ProgressReport />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/faq"
+        element={
+          <ProtectedRoute>
+            <FAQ />
           </ProtectedRoute>
         }
       />

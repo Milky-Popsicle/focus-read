@@ -19,6 +19,134 @@
   margin-bottom: 0;
 }
 
+/* FAQ Styles */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-filters {
+  margin-bottom: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--white);
+  color: var(--text-secondary);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+}
+
+.filter-btn:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.filter-btn.active {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  user-select: none;
+}
+
+.faq-question-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.faq-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.faq-question h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.faq-answer {
+  padding: 0 1rem 1rem 1rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 0.5rem;
+}
+
+.faq-answer p {
+  margin: 0 0 1rem 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.faq-category {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.category-general {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.category-students {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.category-teachers {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.category-admin {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.faq-empty {
+  text-align: center;
+  padding: 2rem;
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;
