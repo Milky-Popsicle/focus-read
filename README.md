@@ -29,11 +29,11 @@ Students can edit or delete existing tasks or notes if they want to update or re
 
 Feature 2 Mini Specification
 
-Feature Name: Profile Card
+Feature Name: FAQ Section
 
 Purpose:
 
-The Profile Card feature allows users to view their personal profile information within the FocusRead: Online Reading Assessment and Monitoring System. It presents important account details in a clear and organized card layout, including the user’s profile picture, name, role, and email. This feature helps users easily identify their account information and improves the overall user experience of the system.
+The FAQ (Frequently Asked Questions) Section provides users with quick answers to common questions about using the FocusRead: Online Reading Assessment and Monitoring System. This feature helps students, teachers, and administrators understand how to use the system properly without needing direct assistance. It improves user experience by providing helpful information and guidance within the system.
 
 Expected User:
 
@@ -41,14 +41,26 @@ Students, Teachers, and Admin
 
 Main Functionality:
 
-The Profile Card displays essential user information in a card layout on the dashboard. Users can see their profile picture along with basic account details such as their name, email, and role. The system may also allow users to upload or update their profile picture and edit their personal information.
+The system includes a FAQ Page where users can view frequently asked questions and their corresponding answers. Users can access this page through the navigation menu. The FAQ page displays common questions related to system usage, such as how to take reading assessments, view progress reports, or manage reading materials.
+
+Each FAQ item will display a question and its corresponding answer, organized in a clean and readable layout. The questions may be displayed in a collapsible or list format to make it easier for users to browse the information.
+
+Example questions may include:
+
+How do students start a reading assessment?
+
+How can teachers assign reading materials?
+
+Where can students view their reading progress?
+
+How do users update their profile information?
 
 Acceptance Criteria:
 
-Users can view their profile card after logging into the system, which displays their name, email, and role.
+Users can access the FAQ page from the system navigation menu.
 
-Users can upload or update their profile picture, and the image will appear on their profile card.
+The FAQ page displays a list of frequently asked questions with their corresponding answers.
 
-The system correctly displays the user’s role (Student, Teacher, or Admin) on the profile card.
+Users can easily read and browse the questions and answers through a clear and organized layout.
 
-The profile card layout displays user information and profile picture in a clear and organized card format on the dashboard.
+The FAQ section provides helpful guidance related to system usage, such as reading assessments, progress monitoring, and account management.
