@@ -23,9 +23,8 @@ export class ReadingMaterialsService {
   }
 
   findById(id: string): ReadingMaterial {
-    const m = this.materials.find(x => x.id === id);
+    const m = this.materials.find((x) => x.id === id);
     if (!m) throw new NotFoundException('Material not found');
     return m;
   }
 }
-

@@ -22,4 +22,3 @@ export class ReportsService {
     return [...this.reports];
   }
 }
-

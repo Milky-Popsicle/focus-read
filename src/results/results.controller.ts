@@ -20,4 +20,3 @@ export class ResultsController {
     return this.resultsService.findById(id);
   }
 }
-

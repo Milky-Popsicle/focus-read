@@ -23,9 +23,8 @@ export class AssessmentsService {
   }
 
   findById(id: string): Assessment {
-    const a = this.assessments.find(x => x.id === id);
+    const a = this.assessments.find((x) => x.id === id);
     if (!a) throw new NotFoundException('Assessment not found');
     return a;
   }
 }
-

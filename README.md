@@ -1,98 +1,54 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+Feature 1 Mini Specification
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Feature Name: Reading Study Plan
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Purpose:
 
-## Description
+The Reading Study Planner helps students organize their reading-related tasks and notes while using the FocusRead: Online Reading Assessment and Monitoring System. It allows students to plan their reading activities, keep reminders about assigned passages, and track their study progress. This feature supports better time management and improves students’ focus on completing reading tasks and assessments.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Expected User:
 
-## Project setup
+Students
 
-```bash
-$ npm install
-```
+Main Functionality:
 
-## Compile and run the project
+The Reading Study Planner allows students to create and manage study tasks related to their reading assignments. Students can add notes or reminders, edit their tasks, mark tasks as completed, and delete tasks that are no longer needed. All tasks will be displayed on the student dashboard so students can easily monitor their study activities.
 
-```bash
-# development
-$ npm run start
+Acceptance Criteria
 
-# watch mode
-$ npm run start:dev
+Students can create a new reading task or study note by entering a title and description.
 
-# production mode
-$ npm run start:prod
-```
+Students can view all their study tasks in the Reading Study Planner section of the dashboard.
 
-## Run tests
+Students can mark a task as completed, and the system will update the task status.
 
-```bash
-# unit tests
-$ npm run test
+Students can edit or delete existing tasks or notes if they want to update or remove them.
 
-# e2e tests
-$ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
-```
 
-## Deployment
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+Feature 2 Mini Specification
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+Feature Name: Profile Card
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
+Purpose:
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+The Profile Card feature allows users to view their personal profile information within the FocusRead: Online Reading Assessment and Monitoring System. It presents important account details in a clear and organized card layout, including the user’s profile picture, name, role, and email. This feature helps users easily identify their account information and improves the overall user experience of the system.
 
-## Resources
+Expected User:
 
-Check out a few resources that may come in handy when working with NestJS:
+Students, Teachers, and Admin
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+Main Functionality:
 
-## Support
+The Profile Card displays essential user information in a card layout on the dashboard. Users can see their profile picture along with basic account details such as their name, email, and role. The system may also allow users to upload or update their profile picture and edit their personal information.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Acceptance Criteria:
 
-## Stay in touch
+Users can view their profile card after logging into the system, which displays their name, email, and role.
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Users can upload or update their profile picture, and the image will appear on their profile card.
 
-## License
+The system correctly displays the user’s role (Student, Teacher, or Admin) on the profile card.
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+The profile card layout displays user information and profile picture in a clear and organized card format on the dashboard.

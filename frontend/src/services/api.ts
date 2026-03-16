@@ -48,6 +48,16 @@ export const teachersAPI = {
   getById: (id: string) => apiClient.get(`/teachers/${id}`),
 }
 
+// Study Plans API
+export const studyPlansAPI = {
+  create: (studentId: string, payload: { title: string; description: string }) => apiClient.post(`/study-plans/${studentId}`, payload),
+  getAllByStudent: (studentId: string) => apiClient.get(`/study-plans/student/${studentId}`),
+  getById: (id: string) => apiClient.get(`/study-plans/${id}`),
+  update: (id: string, payload: { title?: string; description?: string }) => apiClient.put(`/study-plans/${id}`, payload),
+  markCompleted: (id: string) => apiClient.patch(`/study-plans/${id}/complete`),
+  delete: (id: string) => apiClient.delete(`/study-plans/${id}`),
+}
+
 // Reading Materials API
 export const materialAPI = {
   create: (payload: any) => apiClient.post('/reading-materials', payload),

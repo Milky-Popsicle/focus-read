@@ -4,6 +4,6 @@ import { ReadingMaterialsService } from './reading-materials.service';
 
 @Module({
   controllers: [ReadingMaterialsController],
-  providers: [ReadingMaterialsService]
+  providers: [ReadingMaterialsService],
 })
 export class ReadingMaterialsModule {}

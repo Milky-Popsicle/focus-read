@@ -9,9 +9,20 @@ import { ReadingMaterialsModule } from './reading-materials/reading-materials.mo
 import { ResultsModule } from './results/results.module';
 import { ReportsModule } from './reports/reports.module';
 import { UsersModule } from './users/users.module';
+import { StudyPlansModule } from './study-plans/study-plans.module';
 
 @Module({
-  imports: [AuthModule, StudentsModule, TeachersModule, AssessmentsModule, ReadingMaterialsModule, ResultsModule, ReportsModule, UsersModule],
+  imports: [
+    AuthModule,
+    StudentsModule,
+    TeachersModule,
+    AssessmentsModule,
+    ReadingMaterialsModule,
+    ResultsModule,
+    ReportsModule,
+    UsersModule,
+    StudyPlansModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -1,5 +1,8 @@
 import { Controller, Get, Post, Body, Param } from '@nestjs/common';
-import { ReadingMaterialsService, ReadingMaterial } from './reading-materials.service';
+import {
+  ReadingMaterialsService,
+  ReadingMaterial,
+} from './reading-materials.service';
 
 @Controller('reading-materials')
 export class ReadingMaterialsController {
@@ -20,4 +23,3 @@ export class ReadingMaterialsController {
     return this.materialsService.findById(id);
   }
 }
-

@@ -21,9 +21,8 @@ export class TeachersService {
   }
 
   findById(id: string): Teacher {
-    const t = this.teachers.find(te => te.id === id);
+    const t = this.teachers.find((te) => te.id === id);
     if (!t) throw new NotFoundException('Teacher not found');
     return t;
   }
 }
-

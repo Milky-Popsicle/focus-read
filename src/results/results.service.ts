@@ -25,9 +25,8 @@ export class ResultsService {
   }
 
   findById(id: string): Result {
-    const r = this.results.find(x => x.id === id);
+    const r = this.results.find((x) => x.id === id);
     if (!r) throw new NotFoundException('Result not found');
     return r;
   }
 }
-

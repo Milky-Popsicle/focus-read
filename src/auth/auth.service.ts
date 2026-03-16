@@ -20,4 +20,4 @@ export class AuthService {
     const { password, ...rest } = user;
     return { accessToken: 'fake-jwt-token', user: rest };
   }
-} 
+}

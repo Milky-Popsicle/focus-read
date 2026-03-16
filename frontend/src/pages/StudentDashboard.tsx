@@ -1,9 +1,12 @@
 import { BookOpen, CheckCircle, Clock, BarChart3 } from 'lucide-react'
 import { Card, StatCard, Header } from '../components/Card'
+import { ReadingStudyPlanner } from '../components/ReadingStudyPlanner'
 import { DashboardLayout } from '../layouts/DashboardLayout'
+import { useAuth } from '../context/AuthContext'
 import './Dashboard.css'
 
 export const StudentDashboard = () => {
+  const { user } = useAuth()
   return (
     <DashboardLayout>
       <div className="dashboard-container">
@@ -111,6 +114,8 @@ export const StudentDashboard = () => {
             </div>
           </Card>
         </div>
+
+        <ReadingStudyPlanner studentId={user?.id || '1'} />
       </div>
     </DashboardLayout>
   )

@@ -25,13 +25,12 @@ export class UsersService {
   }
 
   findByEmail(email: string): User | undefined {
-    return this.users.find(u => u.email === email);
+    return this.users.find((u) => u.email === email);
   }
 
   findById(id: string): User {
-    const user = this.users.find(u => u.id === id);
+    const user = this.users.find((u) => u.id === id);
     if (!user) throw new NotFoundException('User not found');
     return user;
   }
 }
-

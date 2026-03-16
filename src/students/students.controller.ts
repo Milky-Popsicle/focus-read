@@ -20,4 +20,3 @@ export class StudentsController {
     return this.studentsService.findById(id);
   }
 }
-

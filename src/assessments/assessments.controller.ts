@@ -20,4 +20,3 @@ export class AssessmentsController {
     return this.assessmentsService.findById(id);
   }
 }
-

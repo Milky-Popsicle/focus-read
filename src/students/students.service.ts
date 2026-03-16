@@ -22,9 +22,8 @@ export class StudentsService {
   }
 
   findById(id: string): Student {
-    const s = this.students.find(st => st.id === id);
+    const s = this.students.find((st) => st.id === id);
     if (!s) throw new NotFoundException('Student not found');
     return s;
   }
 }
-
