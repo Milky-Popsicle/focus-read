@@ -32,6 +32,7 @@ export const usersAPI = {
   create: (payload: RegisterPayload) => apiClient.post('/users', payload),
   getAll: () => apiClient.get('/users'),
   getById: (id: string) => apiClient.get(`/users/${id}`),
+  updateProfilePicture: (id: string, profilePicture: string) => apiClient.put(`/users/${id}/profile-picture`, { profilePicture }),
 }
 
 // Students API

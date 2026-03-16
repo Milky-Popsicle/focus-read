@@ -7,6 +7,7 @@ export interface User {
   email: string;
   password: string;
   role: 'admin' | 'teacher' | 'student';
+  profilePicture?: string;
 }
 
 @Injectable()
@@ -32,5 +33,12 @@ export class UsersService {
     const user = this.users.find((u) => u.id === id);
     if (!user) throw new NotFoundException('User not found');
     return user;
+  }
+
+  updateProfilePicture(id: string, profilePicture: string): User {
+    const userIndex = this.users.findIndex((u) => u.id === id);
+    if (userIndex === -1) throw new NotFoundException('User not found');
+    this.users[userIndex].profilePicture = profilePicture;
+    return this.users[userIndex];
   }
 }
