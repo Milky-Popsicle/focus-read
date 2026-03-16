@@ -6,20 +6,26 @@
 
 
 
-Feature Implementation Summary
+Feature Implementation
+
 
 Name: Loayon, Rynard Janver Kin L.
 Section: BSICT - 3B1
+
 
 Implemented Features:
 Reading Study Planner
 FAQ Section
 
+
 Feature 1: Reading Study Planner
+
 
 Purpose
 
+
 The Reading Study Planner helps students organize their reading-related tasks and notes while using the FocusRead: Online Reading Assessment and Monitoring System. It allows students to plan their reading activities, keep reminders about assigned passages, and track their study progress. This feature supports better time management and improves students’ focus on completing reading tasks and assessments.
+
 
 Expected User
 
